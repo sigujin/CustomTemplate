@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tl="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.vito.base.ui.widget.JazzyViewPager
+        android:id="@+id/jvp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="#FFFFFF"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e6e6e6"/>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/common_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        tl:tl_divider_color="@android:color/white"
+        tl:tl_divider_padding="5dp"
+        tl:tl_divider_width="0.1dp"
+        tl:tl_indicator_color="#2C97DE"
+        tl:tl_indicator_height="0dp"
+        tl:tl_textUnselectColor="@android:color/white"
+        tl:tl_underline_color="@android:color/white"
+        tl:tl_underline_gravity="TOP"
+        tl:tl_underline_height="0.1dp"/>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">vito_base_lib</string>
+
+    <!-- Loading -->
+    <string name="loading_common">正在努力加载中...</string>
+    <string name="loading_finish">加载完成</string>
+    <string name="install_app_first">未安装该应用</string>
+    <string name="app_share_info">Hi，我正在使用“驻村工作队”app，也推荐你使用。下载地址：http://117.156.25.157:8080/punch/upload/apk/com.vito.zhucun_120160706180_jiagu_unsign_signed.apk</string>
+
+
+    <!-- update -->
+    <string name="no_new_version">已经是最新版本</string>
+    <string name="no_wifi">没有wifi连接， 只在wifi下更新</string>
+    <string name="net_timeout">连接超时</string>
+    <string name="no_memory">系统存储空间不足</string>
+    <string name="manual_update_title">检测到软件有新的版本，是否进行升级?</string>
+    <string name="force_update_title">必须更新到最新版本才能继续使用</string>
+    <string name="auto_update_title">检测到软件有新的版本，即将为您自动升级…</string>
+    <string name="auto_update_tip">该版本修改了如下内容：</string>
+    <string name="new_version">最新版本：</string>
+    <string name="new_version_size">新版本大小：</string>
+    <string name="download_size">仅需要下载：</string>
+    <string name="ignore_version">忽略该版本</string>
+    <string name="manual_update_tip">更新内容：</string>
+    <string name="download_tip">正在更新… ，已完成</string>
+    <string name="update_failed">更新失败，请下次重启再尝试更新</string>
+    <string name="update_immediately">立即升级</string>
+    <string name="version_newest">已经是最新版本</string>
+    <string name="update_next_time">下次升级</string>
+    <string name="no_more_remind">不再提醒</string>
+    <string name="update_title">升级提示</string>
+    <string name="download_error">下载失败</string>
+    <string name="unzip_error">解压失败</string>
+    <string name="force_update">必须更新版本才能继续使用</string>
+    <string name="downloading">下载中，请稍候</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+</resources>

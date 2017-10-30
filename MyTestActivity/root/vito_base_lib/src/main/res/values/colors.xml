@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wait_color1">#FF42BF42</color>
+    <color name="wait_color2">#FFFFBF05</color>
+    <color name="wait_color3">#FFFF6600</color>
+    <color name="sys_statusbar_bg_color">#47B25F</color>
+    <color name="actionbar_divider_bottom">#E6E6E6</color>
+    <color name="lg_bg">#48C971</color>
+</resources>
