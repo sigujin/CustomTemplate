@@ -19,4 +19,5 @@ android {
 dependencies {
   compile project(':vito_base_lib')
   compile 'com.android.support:multidex:1.0.1'
+  compile 'com.airbnb.android:lottie:1.0.1'
 }
