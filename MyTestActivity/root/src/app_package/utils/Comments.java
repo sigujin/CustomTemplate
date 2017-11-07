@@ -1,4 +1,4 @@
-package com.vito.myapplication.utils;
+package ${packageName}.utils;
 
 /**
  * Created by pc on 2016/11/22.
