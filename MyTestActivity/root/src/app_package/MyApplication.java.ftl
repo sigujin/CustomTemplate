@@ -14,6 +14,7 @@ import com.vito.base.action.Action;
 import com.vito.base.action.LoginSuccessfullyAction;
 import com.vito.base.ui.fragments.FragmentFactory;
 import com.vito.base.utils.CrashHandler;
+import ${packageName}.account.LoginCtrller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +36,7 @@ public class MyApplication extends MultiDexApplication {
         mCrashHandler = CrashHandler.getInstance();
         mCrashHandler.init(this);
         VitoBaseLib.init(this);
+		LoginCtrller.getInstance().init(this);
     }
 
     public Activity getActivity() {

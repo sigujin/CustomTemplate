@@ -19,11 +19,19 @@
     <open file="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
 </#if>
 
+	<merge from="root/AndroidManifest.xml.ftl"
+             to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
+    <merge from="root/AndroidManifestPermissions.xml"
+             to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
+
 	<merge from="root/res/values/strings.xml.ftl"
              to="${escapeXmlAttribute(resOut)}/values/strings.xml" />
 	
 	<merge from="root/res/values/colors.xml.ftl"
              to="${escapeXmlAttribute(resOut)}/values/colors.xml" />
+			 
+	<merge from="root/res/values/dimens.xml.ftl"
+             to="${escapeXmlAttribute(resOut)}/values/dimens.xml" />
 			 
 	<merge from="root/build.gradle.ftl"
              to="${escapeXmlAttribute(projectOut)}/build.gradle" />
@@ -31,14 +39,32 @@
 	<merge from="root/settings.gradle.ftl"
              to="${escapeXmlAttribute(topOut)}/settings.gradle" />
 			 
-	<copy from="root/src/app_package/utils"
-             to="${escapeXmlAttribute(srcOut)}/utils" />
+	<copy from="root/libs"
+             to="${escapeXmlAttribute(projectOut)}/libs" />
 			 
 	<copy from="root/res/drawable-xhdpi"
              to="${escapeXmlAttribute(resOut)}/drawable-xhdpi" />
 
 	<copy from="root/vito_base_lib"
              to="${escapeXmlAttribute(topOut)}/vito_base_lib" />
+			 
+	<instantiate from="root/src/app_package/utils/Comments.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/utils/Comments.java" />
+				   
+	<instantiate from="root/src/app_package/account/LoginCtrller.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/account/LoginCtrller.java" />
+				   
+	<instantiate from="root/src/app_package/account/LoginInfo.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/account/LoginInfo.java" />
+			
+	<instantiate from="root/src/app_package/account/LoginInfoBean.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/account/LoginInfoBean.java" />
+				   
+	<instantiate from="root/src/app_package/account/LoginResult.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/account/LoginResult.java" />
+				   
+	<instantiate from="root/src/app_package/account/LoginResultCallBack.java.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/account/LoginResultCallBack.java" />
 			 
 	<instantiate from="root/assets/json/vito_home_tab_data.json.ftl"
                    to="${escapeXmlAttribute(manifestOut)}/assets/json/vito_home_tab_data.json" />
@@ -57,6 +83,9 @@
 		
 	<instantiate from="root/src/app_package/MyInfoFragment.java.ftl"
         to="${escapeXmlAttribute(srcOut)}/fragment/MyInfoFragment.java" />   
+		
+	<instantiate from="root/src/app_package/LoginFragment.java.ftl"
+        to="${escapeXmlAttribute(srcOut)}/fragment/LoginFragment.java" />   
 
 	<instantiate from="root/src/app_package/MainActivityFragment.java.ftl"
         to="${escapeXmlAttribute(srcOut)}/fragment/MainActivityFragment.java" />   
@@ -66,6 +95,9 @@
 		
 	<instantiate from="root/res/layout/fg_main.xml.ftl"
         to="${escapeXmlAttribute(resOut)}/layout/fg_main.xml" />
+		
+	<instantiate from="root/res/layout/fg_login.xml.ftl"
+        to="${escapeXmlAttribute(resOut)}/layout/fg_login.xml" />
 		
 	<instantiate from="root/res/layout/fg_my_info.xml.ftl"
         to="${escapeXmlAttribute(resOut)}/layout/fg_my_info.xml" />
